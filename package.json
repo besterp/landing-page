@@ -1,7 +1,7 @@
 {
   "name": "landing-page",
   "version": "0.1.0",
-  "homepage": "https://data-minds.github.io",
+  "homepage": "https://besterp.github.io/landing-page",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",

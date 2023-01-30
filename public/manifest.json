@@ -1,21 +1,11 @@
 {
-  "short_name": "Dataminds",
-  "name": "Dataminds Landing Page",
+  "short_name": "Besterp Technologies",
+  "name": "Besterp Landing Page",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
-    },
-    {
-      "src": "dataminds-imagotipo-blanco.png",
-      "type": "image/png",
-      "sizes": "162x90"
-    },
-    {
-      "src": "dataminds-imagotipo-negro.png",
-      "type": "image/png",
-      "sizes": "162x90"
     }
   ],
   "start_url": ".",

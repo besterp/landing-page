@@ -14,31 +14,12 @@ const navigation = [
 ]
 
 export default function Hero() {
-  const [appearTitle, setAppearTitle] = useState(true)
-  const [miliseconds, setMiliseconds] = useState(500)
-  const transition = useTransition(appearTitle, {
-    // from: { x: -100, y: 800, opacity: 0 },
-    // enter: { x: 0, y: 0, opacity: 1 },
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: {},
-    delay: miliseconds,
-    config: config.molasses,
-  })
 
-  const transition_2 = useTransition(appearTitle, {
+  const transition = useTransition(true, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: {},
-    delay: 1200,
-    config: config.molasses,
-  })
-
-  const transition_3 = useTransition(appearTitle, {
-    from: { opacity: 0 },
-    enter: { opacity: 1 },
-    leave: {},
-    delay: 2000,
+    delay: 3500,
     config: config.molasses,
   })
 
@@ -59,31 +40,29 @@ export default function Hero() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <div className="sm:text-center lg:text-left">
-                <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
-                  
-                  {/* {transition((styles, item) => item ?
-                    <animated.div style={styles}>
-                      <span className="block xl:inline font-mono text-white">Empoderando la Cooperación con</span>{' '}<br />
-                    </animated.div> : ""
-                  )}
-                  {transition_2((styles, item) => item ?
-                    <animated.div style={styles}>
-                      <span className="block xl:inline font-mono text-white">Tecnología</span>
-                    </animated.div> : ""
-                  )} */}
+                <h1 className="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl h-32 sm:h-40 md:h-48">
                   <Typewriter
+                    options={{
+                      autoStart: true,
+                      loop: true,
+                      delay: 50,
+                      deleteSpeed: 10,
+                    }}
                     onInit={(typewriter) => {
-
                       typewriter
-                        .typeString('<span style="color: white;">Empoderando la </span>')
-                        .typeString('<span style="color: white;">Cooperación con </span>')
+                        .typeString('<span style="color: white;">Empoderando la </span><br>')
+                        .typeString('<span style="color: white;">Cooperación con </span><br>')
                         .typeString('<span style="color: white;">Tecnología</span>')
                         .pauseFor(1000)
+                        .deleteChars(27)
+                        .typeString('<span style="color: white;">Tecnología con </span><br>')
+                        .typeString('<span style="color: white;">Cooperación</span>')
+                        .pauseFor(2000)
                         .start();
                     }}
                   />
                 </h1>
-                {transition_3((styles, item) => item ?
+                {transition((styles, item) => item ?
                   <animated.div style={styles}>
                     <p className="mt-3 text-base text-white font-montserrat sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                       Somos la consultora líder en el sector cooperativo peruano con más de 10 años siendo partícipes de la democratización de tecnologías de vanguardia en instituciones microfinancieras.
@@ -93,7 +72,7 @@ export default function Hero() {
                     </p>
                   </animated.div> : ""
                 )}
-                {transition_3((styles, item) => item ?
+                {transition((styles, item) => item ?
                   <animated.div style={styles} className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="shadow">
                       <LinkScroll to="soluciones" activeClass="active-white" offset={20} spy={true} smooth={true} duration={500}>

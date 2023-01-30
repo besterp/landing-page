@@ -35,13 +35,13 @@ function Navbar() {
     window.addEventListener('scroll', changeColor)
 
     return (
-        <div className={`flex items-center px-6 py-4 justify-between sticky top-0 z-50 ${color ? "bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 shadow-xl" : "bg-blue-900"}`}>
+        <div className={`flex items-center px-4 py-3 sm:px-6 sm:py-4 justify-between sticky top-0 z-50 ${color ? "bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 shadow-xl" : "bg-blue-900"}`}>
             <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a className="flex-1">
                     <img
                         //src={require("../../images/dataMinds_imagotipo_blanco.png")}
                         src={dataMindsImagotipoBlanco}
-                        className="h-16 w-auto sm:h-18"
+                        className=" h-12 w-auto sm:h-16"
                         alt="Besterp Technologies"
                     />
                 </a>
