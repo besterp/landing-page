@@ -7,7 +7,7 @@ export default function Contact(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_uchtwie', 'contact_form_dataminds', form.current, '0ATGHAJc3O27MqxEa')
+    emailjs.sendForm('service_6lxcoys', 'template_obom1ei', form.current, 'Xo3yPnib_yzuoJPlg')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -19,7 +19,7 @@ export default function Contact(props) {
   };
 
   return (
-    <section className="text-black">
+    <section className="text-black mt-10">
       <div className="grid max-w-6xl grid-cols-1 mx-auto md:grid-cols-2 md:divide-x shadow-lg sm:rounded-xl sm:overflow-hidden">
         <div className="bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 text-white px-6 lg:px-8 py-6 shadow-inner font-montserrat">
           <h1 className="text-4xl font-bold font-mono text-white my-3">contáctanos.</h1>
@@ -30,22 +30,22 @@ export default function Contact(props) {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <span>informes@dataminds.pe</span>
+              <span>informes@besterp.pe</span>
             </p>
           </div>
         </div>
         <form ref={form} onSubmit={sendEmail} novalidate="" className="flex flex-col space-y-6 px-6 lg:px-8 py-6 ng-untouched ng-pristine ng-valid bg-white font-montserrat">
           <label className="block">
             <span className="mb-1">Nombre completo</span>
-            <input type="text" placeholder="Renato Velásquez" className="block w-full rounded-lg shadow-md p-2" name="name" />
+            <input type="text" placeholder="Renato Velásquez" className="block w-full rounded-lg shadow-md p-2" name="user_name" />
           </label>
           <label className="block">
             <span className="mb-1">Correo</span>
-            <input type="email" placeholder="renato.velasquez@miempresa.com" className="block w-full rounded-lg shadow-md p-2" name="email" />
+            <input type="email" placeholder="renato.velasquez@miempresa.com" className="block w-full rounded-lg shadow-md p-2" name="user_email" />
           </label>
           <label className="block">
             <span className="mb-1">Teléfono</span>
-            <input type="phone" placeholder="999999999" className="block w-full rounded-lg shadow-md p-2" name="phone" />
+            <input type="phone" placeholder="999999999" className="block w-full rounded-lg shadow-md p-2" name="user_phone" />
           </label>
           <label className="block">
             <span className="mb-1">Mensaje</span>

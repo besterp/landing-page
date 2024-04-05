@@ -1,12 +1,12 @@
 import SolutionsSwiper from "../components/solutions/solutions-swiper"
 
 const features = [
-  { name: 'Desarrollo', description: 'Diseñaremos y construiremos un sistema de puntuación personalizado con el conjunto de datos de la organización.' },
+ /* { name: 'Desarrollo', description: 'Diseñaremos y construiremos un sistema de puntuación personalizado con el conjunto de datos de la organización.' },
   { name: 'Implementación', description: 'Fácil y rápido. Tu equipo solo debe de desarrollar una API que nos envíe determinados datos y les retornaremos la predicción.' },
   { name: 'Hosting', description: 'Nosotros nos encargamos del hosting de los sistemas de puntuación. Tu organización solo debe de aprovecharlos!' },
   { name: 'Pago', description: 'Contrata una suscripción anual y paga de forma mensual.' },
   { name: 'Promociones', description: 'Cuentas con un mes gratis para probar cualquiera de nuestros sistemas de puntuación. Además, si trabajas con el Sistema Besterp, la implementación es gratuita.' },
-  { name: 'Consideraciones', description: 'El desarrollo y la implementación son servicios que se pagan de forma separada y por una única vez.' },
+  { name: 'Consideraciones', description: 'El desarrollo y la implementación son servicios que se pagan de forma separada y por una única vez.' },*/
 ]
 
 export default function Solutions() {

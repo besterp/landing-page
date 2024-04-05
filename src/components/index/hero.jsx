@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import "@fontsource/jetbrains-mono"
 
 import fintechBg from "../../images/finance_consultancy.jpg"
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: 'Soluciones', href: '#' },
@@ -75,11 +76,11 @@ export default function Hero() {
                 {transition((styles, item) => item ?
                   <animated.div style={styles} className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="shadow">
-                      <LinkScroll to="soluciones" activeClass="active-white" offset={20} spy={true} smooth={true} duration={500}>
+                      <Link to="/soluciones" activeClass="active-white" offset={20} spy={true} smooth={true} duration={500}>
                         <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold font-montserrat rounded-full text-white bg-gradient-to-r from-red-800 via-red-600 to-red-400 md:py-4 md:text-lg md:px-10 hover:from-red-600 hover:via-red-400 hover:to-red-200 hover:text-black hover:font-bold">
                           Conocer más
                         </a>
-                      </LinkScroll>
+                      </Link>
                     </div>
                   </animated.div> : ""
                 )}

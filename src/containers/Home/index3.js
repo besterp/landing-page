@@ -5,25 +5,24 @@ import Solutions from '../../pages/solutions'
 import Methodology from '../../components/methodology/methodology'
 import GetContact from '../../pages/contact'
 import Maintenance from '../../components/maintenance/Maintenance'
-import Clients from '../../components/clients/Clients'
+import Historia from '../../components/historia/Historia'
 import Footer from '../../components/footer/footer'
-function Home() {
+function Home2() {
 
   return (
-    <div>
-
-      <Navbar />
-      <Hero />
-      <Clients />
-      <Footer/>
+    <>
+    
+    <Navbar />
+  <Historia/>
+  <Footer/>
        { /*  <Navbar />
         <Hero />
         <Maintenance/> */}
 
    
      
-    </div>
+    </>
   )
 }
 
-export default Home
+export default Home2
